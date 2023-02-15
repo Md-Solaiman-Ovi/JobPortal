@@ -1,0 +1,150 @@
+<html>
+	<head>
+		<style>
+			body {
+				  background-image: url('image/img27.jpg');
+				  background-repeat: no-repeat;
+				  background-attachment: fixed;
+				  background-size: 100% 100%;
+				  
+				  padding: 20px;
+				  padding-left: 50px;
+				  padding-right: 50px;
+				  padding-top: 50px;
+				  padding-bottom: 50px;
+				  
+				}
+			table {
+	width:100%;
+	border: 2px solid black;
+
+}
+ td {
+	
+	border: 2px solid black;
+	
+	
+}
+h1 {
+	color: white;
+	text: bold;
+	text-shadow: 7px 5px 5px black;
+	background-color:#003710;
+	background-size: 100% 5%;			  
+    padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	
+	
+}
+
+
+.table-header{
+	color: white;
+	text-shadow: 4px 2px 3px black;
+}
+.submit-btn1{
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer;
+	margin: auto;
+	background: linear-gradient(to right, #05FE2A , #0A7A12);
+	border: 0;
+	border-radius: 30px;
+	
+}
+
+.submit-btn3{
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer;
+	margin: auto;
+	background: linear-gradient(to right, #E16969 , #FC0808);
+	border: 0;
+	border-radius: 30px;
+	
+}
+.submit-btn4{
+	width:20%;
+	text:bold;
+	color:#13F16A ;
+	text-shadow: 3px 2px 3px black;
+	
+	cursor: pointer;
+	margin: auto;
+	background: linear-gradient(to right, #C0C0C0 , #696969);
+	border: 0;
+	border-radius: 10px;
+	
+}
+			
+		</style>
+	</head>
+	<body>
+		<h1 align="center"> Create new employeer ID </h1>
+
+		<table align="center" border="5"  >
+			
+				<tr class="table-header" >	
+					<td align="center" style="background-color: green" ><h2>Create Employer ID</h2></td>
+					
+					<td align="center" style="background-color: red"><h2>Remove Employer ID</h2></td>
+				</tr>
+			
+			<tr >
+				
+				<td align="center" style="background-color: #FFFAF0" >
+					<form action="DBcreate/2.4adminDataInsert.php" method="post">
+					
+					<br>
+						 <h3>Username&nbsp;: <input type="text" name="username" placeholder="Enter employer name" required /></h3> 
+						 <h3>Email&emsp;&emsp;: <input type="text" name="email" placeholder="example@gmail.com" required /></h3> 
+						 <h3>Password&ensp;: <input type="password" name="pwd" placeholder="Strong password" required /></h3> 
+			
+						 
+						<button type="submit" class="submit-btn1"> <h2>Create</h2> </button><br><br><br><br>
+					</form>
+				</td>
+			
+			
+				<td align="center" style="background-color: #FFFAF0">
+						
+						<form action="DBcreate/2.6adminDataDelete.php"  method="post">	
+					<br>
+								<h3>Username&nbsp;: <input type="text" name="username" placeholder="Enter employer name" required /></h3> 
+								<h3>Email&emsp;&emsp;: <input type="text" name="email" placeholder="example@gmail.com" required /></h3> <br><br><br>
+								 
+								 <button type="submit" class="submit-btn3"> <h2>Delete</h2> </button><br><br><br><br>		
+					    </form >
+				</td>
+				
+			</tr>
+		
+		</table>
+		
+		
+		<h1 align="center">Show Employer List</h1>
+						<form align="center" action="DBcreate/2.5adminEmployerList.php"  method="post">	
+								 <button align="center" type="submit" class="submit-btn4"> <h2>Click on me</h2> </button>		
+					    </form >
+						
+						
+		<h1 style="background-color: #003710" align="center">See List of Register</h1>
+						<form align="center" action="jobSeekersDB/4.5registerList.php"  method="post">	
+								 <button align="center" type="submit" class="submit-btn4"> <h3>Click on me</h3> </button><br>	
+					    </form >
+						
+						<form align="center" action="LOGIN.html"  method="post">	
+								 <button align="center" type="submit" class="submit-btn4"> <h2 style="color: #FFFAF0"> Logout</h2> </button><br><br>		
+					    </form >
+						 
+		
+		<br><br><br><br><br>
+	
+	
+	
+		
+	</body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title> Log In Page</title>
+	    <link rel="stylesheet" href="CSS/style1.css">
+		
+		
+
+		
+	</head>
+	<body>
+		
+		<div align="right" class="form-box"  >
+			<h2 align="center">Job portal </h2>
+			<div class="button-box">
+					<div id="btn"></div>
+						<button type="button" class="toggle-btn" onclick="admin()">Admin</button>
+						<button type="button" class="toggle-btn"onclick="employer()">Employer</button>
+
+		    </div>
+			
+			<div>
+				<form action="PHP/adminLoginConnection.php" method="post"   id="admin" class="input-grp" align="center" width="100%" >
+					
+					&emsp; Email &emsp;&nbsp; : <input type="text"  name="email" placeholder="example@gmail.com" required > <br/> <br/>
+					&emsp; Password :           <input type="password"  name="pwd" placeholder="password" required /> <br/><br >
+					&emsp;	&emsp;				<button type="submit" class="submit-btn"> Log in </button><br><br><br><br>
+					
+								
+				</form>
+				
+				
+				<form action="PHP/employerLoginConnection.php" method="post" id="employer" class="input-grp" align="center" width="100%" >
+					&nbsp;&ensp; Username&nbsp;&nbsp; : <input type="text"  name="name" placeholder="username" required > <br/> <br/>
+					&nbsp;     &ensp; Email&emsp;&emsp; : <input type="text"  name="email" placeholder="example@gmail.com" required > <br/> <br/>
+						  &emsp; Password&ensp; :           <input type="password"  name="pwd" placeholder="password" required /> <br/><br >
+					&emsp;&emsp;		        <button type="submit" class="submit-btn"> Log in </button><br><br><br><br>
+					&ensp;Do you have any account?<a href="3.1signup.html">Create Account</a>
+								
+				</form>
+			</div>
+		</div>
+		
+		
+		<script>
+			var x = document.getElementById("admin");
+			var y = document.getElementById("employer");
+			var z = document.getElementById("btn");
+			
+			function admin(){
+				x.style.left = "50px";
+				y.style.left = "450px";
+				z.style.left = "0px";
+			
+			}
+			function employer(){
+				x.style.left = "-400px";
+				y.style.left = "50px";
+				z.style.left = "110px";
+			
+			}
+			
+			
+			 function validate() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("pwd").value;
+            
+
+
+
+            if ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) == false) {
+                alert("You have entered an invalid email address!")
+            }
+            if ((/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(pwd)) == false) {
+                alert("You have entered an invalid password!")
+            }
+            if ((/^(?:\+88|01)?(?:\d{11}|\d{13})$/.test(mobile)) == false) {
+                alert("Invalid Mobile Number!")
+            }
+        }
+			
+		</script>
+		
+        
+		
+		
+		
+		
+		
+	</body>
+</html>
